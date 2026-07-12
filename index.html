@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Journey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music/memories.mp3" type="audio/mpeg">
+</audio>
+    <div id="stars"></div>
+    <!-- Landing Page -->
+    <section id="landing" class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="content">
+
+            <p class="small-text">Every champion has a story.</p>
+
+            <h1>This is one of them.</h1>
+
+            <button id="startBtn">
+                Unwrap Your Surprise 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Story Page -->
+    <section id="story" class="story hidden">
+
+   <div class="story-content">
+
+    <h2 id="caption"></h2>
+
+    <img
+        id="memoryPhoto"
+        src=""
+        alt="Memory"
+    >
+
+    <button id="nextBtn">
+        Next →
+    </button>
+
+</div>
+</section>
+<section id="letter" class="hidden">
+
+    <div class="letter-box">
+
+        <h1>💌 Dear Friend...</h1>
+
+        <p id="letterText"></p>
+
+    </div>
+
+</section>
+<button id="musicBtn">🎵</button>
+<script src="script.js"></script>
+<button onclick="document.getElementById('bgMusic').play()">
+    Test Music
+</button>
+
+
+</body>
+</html>
